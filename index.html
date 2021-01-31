@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive galerija</title>
+    <style>
+      body {
+          max-width: 960px;
+          width: 80%;
+          font-family: sans-serif;
+          font-size: 18px;
+          margin:auto
+      }
+
+      #grid1 {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 40px;
+      }
+
+      #grid1>div {
+          background: linear-gradient(rgb(0, 139, 250, 0.870) 70%, rgb(200, 205, 205) 20%);
+          border-radius: 7px;
+          opacity: 50%;
+      }
+
+      #box {
+          height: 130px;
+          width: 160px;
+      }
+
+      .content {
+          text-align: center;
+          font-size: 18px;
+          background-image: url(placeholder-image.png);
+          line-height: 13;
+          background-size: 100%;
+          background-repeat: no-repeat;
+      }
+
+      @media screen and (max-width: 1024px) {
+          #grid1 {
+              grid-template-columns: repeat(3, 1fr);
+          }
+          
+          }
+          
+      }
+
+      
+        @media screen and (max-width: 414px) {
+            #grid1 {
+                grid-template-columns: repeat(1, 1fr);
+            } 
+        }
+
+        p {
+            margin-top: 40px;
+        }
+
+     
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <h3>Gallery Heading</h3>
+
+
+    <div id="grid1">
+        <div id="box">
+            <div class="content">Image Title</div>
+        </div>
+        <div id="box">
+            <div class="content">Image Title</div>
+        </div>
+        <div id="box">
+            <div class="content">Image Title</div>
+        </div>
+        <div id="box">
+            <div class="content">Image Title</div>
+        </div>
+        <div id="box">
+            <div class="content">Image Title</div>
+        </div>
+        <div id="box">
+            <div class="content">Image Title</div>
+        </div>
+        <div id="box">
+            <div class="content">Image Title</div>
+        </div>
+        <div id="box">
+            <div class="content">Image Title</div>
+        </div>
+        <div id="box">
+            <div class="content">Image Title</div>
+        </div>
+        <div id="box">
+            <div class="content">Image Title</div>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et rutrum mi. Fusce scelerisque pulvinar nisi at dapibus.
+    Nam eu lectus finibus, elementum mi at, rutrum turpis. Nulla malesuada tortor eu magna bibendum convallis. Duis
+    ullamcorper arcu elit, in venenatis nisi lobortis quis. Donec sit amet orci cursus, hendrerit leo ac, pulvinar libero.
+    Phasellus nec purus vulputate, fringilla libero tristique, luctus ipsum. Proin quam metus, tempus lobortis orci nec,
+    dignissim dictum sapien. Nam pharetra ex lectus, a semper risus finibus at.</p>
+
+
+</body>
+
+</html>
